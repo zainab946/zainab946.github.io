@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NUST BALOCHISTAN CAMPUS</title>
+    <style>
+            body {
+               background-color: rgb(48, 91, 134); /* Replace with your chosen RGB values */
+
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Aligns children (logo and text) to the start of the container */
+            background-color: #002150; 
+        }
+        .header-text {
+            flex-grow: 1; /* Makes the .header-text div grow to fill the space */
+            display: flex;
+            justify-content: center; /* Centers the h1 text within the .header-text div */
+            padding-left: 20px; /* Optional: Adds some padding between the logo and the text */
+        }
+        .header-text h1 {
+            color:#ddd;
+            margin: 0; /* Removes any default margins */
+        }
+        .topnav {
+            background-color: dimgray; /* Dark background for the navbar */
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Center the nav items horizontally */
+          
+        }
+        .topnav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        nav{
+            text-decoration-color: darkblue;
+            text-decoration: underline;
+        }
+      
+        nav a:hover {
+            background-color: gray;
+          
+            
+        }
+        input, select, textarea {
+            padding: 5px; /* Add space inside the fields */
+            margin-top: 10px; /* Add space between form fields */
+        } 
+        main {
+            display: flex;
+            flex-direction: column; /* Stack the children vertically */
+             align-items: center; /* Center items on the cross-axis (horizontally) */
+             text-align: center; /* Center the text inside the container */
+             max-width: 900px; /* Maximum width of the container */
+            margin: 0 auto; /* This centers the container in the middle of the page */
+            padding: 20px; /* Optional: Add padding inside the container */
+            font-size: large;
+           
+          }
+          @keyframes fadeIn {
+              from { opacity: 0; }
+               to { opacity: 1; }
+            }
+
+            .departments li {
+             animation: fadeIn 2s ease-in forwards;
+             animation-delay: var(--animation-delay, 0s);
+             font-size: 20px;
+             font-weight: 500;
+             font-family: 'Times New Roman', Times, serif;
+
+            }
+
+            @keyframes flipIn 
+            {
+             from {
+             transform: perspective(400px) rotateY(90deg);
+             opacity: 0;
+             }
+             to {
+                transform: perspective(400px) rotateY(0);
+                opacity: 1;
+                }
+            }
+
+            .departments h2 {
+            backface-visibility: visible; /* For 3D-transformed elements */
+            animation-name: flipIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+            }
+
+        .image-container {
+             display: flex; /*  establishes a flex container */
+             justify-content: center; /*  center the images in the container */
+             align-items: center; /* Tvertically align the images  of different heights */
+             gap: 20px; /*  space between the images */
+        }
+ 
+
+        footer {
+            background-color: #002147; /* Adjust the color to match your site */
+            color: white;
+            padding: 20px 0; /* Add padding to top and bottom */
+            }
+
+        footer hr {
+              border: none;
+              height: 1px;
+              background-color: #ffffff; /* White line */
+              margin: 10px 0; /* Add some vertical space around the lines */
+        }
+/* Global style for all hr elements */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd; /* Or any color you prefer */
+  margin: 20px 0;
+}
+
+        .footer-content {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 0 20px; /* Add padding to the left and right */
+        }
+
+        .footer-left p, .footer-right p {
+            margin: 0; /* Remove default margin from paragraphs */
+        }
+
+        .footer-right ul {
+            list-style-type: none; /* Remove bullet points from list */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Display list items in a row */
+            gap: 10px; /* Add space between list items */
+        }
+
+        .footer-right ul li {
+            padding: 0; /* Remove default padding */
+        }
+
+        .footer-right a {
+            color: white; /* Set the text color */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .footer-right a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        p{
+            font-size: 22px;
+            font-style: italic;
+            font-weight:545;
+        }
+           @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em; /* Smaller font size for headings on mobile */
+            }
+    </style>
+</head>
+<body>
+   
+        <header>
+            <div class="header-content">
+                <img src="nust.png" alt="NUST LOGO" width="150" height="150">
+                <div class="header-text">
+                    <h1>NUST BALOCHISTAN CAMPUS</h1>
+                </div>
+            </div>
+            <div class="topnav">
+                
+                <a class="active" href="#home">Home</a>
+                <a href="#contact-info">Contact</a>
+                <a href="#About">About</a>
+                <nav>
+                <a href="https://nust.edu.pk/">NUST OFFICIAL WEBSITE</a>
+                </nav>
+            </div>
+        </header>
+<main id="About">
+    
+        <h2>Photo Gallery</h2>
+        <div class="image-container">
+           
+            <img src="download.jpg" alt="First Image" width="500" height="250">
+            <img src="NBC_313.jpg" alt="Second Image" width="500" height="250">
+        </div>
+        
+        <p>
+        The concept of establishing NBC is to help the Government of Balochistan in the development of 
+        human resources by producing a quality workforce in the fields of engineering and sciences. The project was initiated
+        under the auspices of the Chief Minister of Balochistan and Chief of Army Staff to establish a federal footprint in the provincial educational 
+        landscape to assure the people of Balochistan of national support in their socio-economic development
+    </p>
+
+    <hr>
+   
+    <ol class="departments">
+        <h2>Departments in NBC</h2>
+        <li style="--animation-delay: 0.5s;">Computer Science</li>
+        <li style="--animation-delay: 1s;">Civil Engineering</li>
+        </ol>
+<br>
+    <h2>Date and Time</h2>
+    <mark><time datetime="2024-02-29T08:00">February 29, 2024, 11:00 AM</time></mark>
+    </br>
+    <hr style="border: 1px; height: 2px; background-color: #ddd; margin: 20px 0;">
+
+
+    <h2>Graphics Area</h2>
+    <canvas id="myCanvas" width="500" height="250" style="border:1px solid #000;">
+
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+        <br>
+        <h2>99 Names of ALLAH S.W.T</h2>
+        <audio controls>
+        <source src="99names.mp3" type="audio/ogg">
+        Your browser does not support the audio tag.
+        </audio>
+        </br>
+        <br>
+        <h2>Life At Nust</h2>
+            <video width="500" height="250" controls>
+            <source src="video.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+            </video>
+        </br>
+        <section>
+            <h2>Please fill out this form</h2>
+            
+            <form action="where_to_send_form_data" method="post">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="0">
+                </p>
+                <p>
+                    Gender:<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </p>
+                <p>
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country">
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="India">India</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+                    <label for="subscribe">Subscribe to newsletter</label>
+                </p>
+                <p>
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </section>
+
+
+<!--[if IE]>
+<p>You are using Internet Explorer.</p>
+<![endif]-->
+
+<!--[if IE 6]>
+    <p>You are using Internet Explorer 6.</p>
+<![endif]-->
+
+<!--[if IE 7]>
+    <p>You are using Internet Explorer 7.</p>
+<![endif]-->
+
+<!--[if IE 8]>
+    <p>You are using Internet Explorer 8.</p>
+<![endif]-->
+
+<!--[if gte IE 9]>
+    <p>You are using Internet Explorer 9 or higher.</p>
+<![endif]-->
+
+</main>
+
+<footer id="contact-info">
+    <hr> <!-- Horizontal rule for the line -->
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>&copy; 2024 Nust. All rights reserved.</p>
+        </div>
+        <div class="footer-right">
+            <p>Follow us on:</p>
+            <ul>
+                <li><a href="https://www.facebook.com/NUST.NBC">Facebook</a></li>
+                <li><a href="https://twitter.com/NUSTQTAOfficial">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/nust-balochistan-campus-232b38252/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr> <!-- Another horizontal rule for the line -->
+</footer>
+</body>
+
+</html>

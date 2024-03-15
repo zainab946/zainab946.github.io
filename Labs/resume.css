@@ -1,0 +1,145 @@
+/* General resets */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+/* Header */
+header {
+    background: #333; /* Fallback for browsers that do not support gradients */
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 10px solid #e8491d;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 80px; /* Same value for width and height will make it square */
+    height: 200px;
+    border-radius: 10px; /* A smaller value for slight rounded corners */
+    margin: 0 auto 20px; /* Center the image and add margin below */
+    display: block;
+    border: 5px solid #e7e7e7;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* On hover, add some fun to picture */
+.profile-picture:hover {
+    transform: scale(1.1);
+    border-color: #e8491d;
+}
+
+/* Main Content */
+main {
+    margin-top: 2rem;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Sections */
+section h2 {
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+/* Skills */
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    background: #e8491d;
+    display: inline-block;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Animate skills on hover */
+.skills li:hover {
+    transform: translateY(-5px);
+    background: #cf391a;
+}
+
+/* Experience and Education */
+.experience h3, .education h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience p, .education p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background: linear-gradient(to right, #333, #555);
+}
+
+/* Media Queries */
+@media (min-width: 700px) {
+    .profile-picture {
+        width: 200px;
+        top: -100px;
+        left: calc(50% - 100px);
+    }
+    
+  
+  
+    @media (min-width: 700px) {
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+            grid-gap: 2rem;
+        }
+        
+        .about-me, .education {
+            grid-column: 1 / 2; /* These sections will take the first column */
+        }
+    
+        .skills {
+            grid-column: 2 / 3; /* Skills will take the second column */
+            grid-row: 1; /* Skills will be in the first row of the second column */
+        }
+    
+        .FYP {
+            grid-column: 2 / 3; /* FYP will also take the second column */
+            grid-row: 3; /* FYP will be in the second row of the second column */
+        }
+    
+        .projects {
+            grid-column: 2 / 3; /* Projects will also take the second column */
+            grid-row: 2; /* Projects will be in the third row of the second column */
+        }
+    
+    }
+}

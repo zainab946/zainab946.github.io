@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resume - Zainab Zahid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            grid-column: 1 / -1;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .profile-picture {
+            grid-column: 1 / span 3;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px;
+            display: block;
+            border: 5px solid #e7e7e7;
+        }
+
+        .about-me, .education, .projects, .final-year-project {
+            grid-column: 1 / span 6;
+        }
+
+        .skills {
+            grid-column: 7 / span 6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .skills div {
+            background: #e8491d;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            grid-column: 1 / -1;
+            background: #fff;
+            padding: 2rem;
+        }
+
+        footer {
+            grid-column: 1 / -1;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .profile-picture, .about-me, .education, .skills, .projects, .final-year-project {
+                grid-column: 1 / -1;
+            }
+
+            .skills div {
+                margin: 0.25rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Resume - Zainab Zahid</h1>
+</header>
+
+<div class="container">
+    <img src="zainab.jpg" alt="Profile Picture" class="profile-picture">
+
+    <main>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Innovative professional with a passion for machine learning and web development, crafting dynamic solutions at the intersection of data science and digital experiences.</p>
+        </div>
+
+        <div class="education">
+            <h2>Education</h2>
+            <ul>
+                <li>O-Levels <br> The City School (2017-2018)</li>
+                <li>FSC(Pre-Engineering) <br> The City School(2019-2020)</li>
+                <li>Bachelor of Science in Computer Science <br> National University of Sciences, and Technology (NUST), (2020-2024)</li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>Python</div>
+            <div>C++</div>
+            <div>SQL</div>
+            <div>Flutter</div>
+            <div>Problem Solving</div>
+        </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Online Shopping Platform (Console)</li>
+                <li>Counter Strike Model using OOP</li>
+                <li>Automated Street Light Controller</li>
+                <li>Math Library in Assembly Language</li>
+                <li>Music Production System Database</li>
+                <li>Automated TODO List & TO-DO App in Flutter</li>
+                <li>Emotion Detection and Translation</li>
+            </ul>
+        </div>
+
+        <div class="final-year-project">
+            <h2>Final Year Project</h2>
+            <p>Hybrid Lie Detection System Using Micro-Expressions and Physiological Sensors</p>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>Contact me:</p>
+    <p>Email: zainab.zahid@email.com</p> <!-- Replace with your email -->
+    <a href="https://zainab946.github.io/" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/zainab-zahid-5768b1246/" target="_blank">LinkedIn</a>
+</footer>
+
+</body>
+</html>
